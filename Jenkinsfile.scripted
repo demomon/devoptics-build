@@ -1,0 +1,6 @@
+node {
+  stage('Build') {
+    echo "Producing: devoptics-build-${BUILD_NUMBER}"
+    gateProducesArtifact file: '', id: "devoptics-build-${BUILD_NUMBER}", label: '', type: 'demo'
+  }
+}
